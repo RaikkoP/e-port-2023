@@ -1,38 +1,38 @@
 <script setup lang="ts">
 import Welcome from './components/Welcome.vue'
-import {ref, onMounted, onUnmounted} from 'vue'
-let posX = ref('');
-let posY = ref('');
-  
+import { ref, onMounted, onUnmounted } from 'vue';
+let posX = ref(0);
+let posY = ref(0);
 
-const trackMousePosition = (e: MouseEvent) => {
-  posX.value = e.clientX -50 + 'px';
-  posY.value = e.clientY -50 + 'px';
-  console.log(posX.value, posY.value)
+const trackMouse = (e: MouseEvent) => {
+    posX.value = e.clientX - 10;
+    posY.value = e.clientY - 10;
+    console.log(posX.value, posY.value)
 }
 onMounted(() => {
-  window.addEventListener('mousemove', trackMousePosition);
+    window.addEventListener("mousemove", trackMouse);
 })
 onUnmounted(() => {
-  window.removeEventListener('mousemove', trackMousePosition);
+    window.removeEventListener("mousemove", trackMouse);
 })
 
 </script>
 
 
 <template>
-  <div class="mouseCircle" :style="{'background': `radial-gradient(circle at ${posX} ${posY}, transparent 10%, rgba(0,0,0,0.8) 80%)`}"/>
-  <Welcome />
-  
+    <div class="cursor" :style="{ left: posX + 'px', top: posY + 'px' }"></div>
+    <Welcome />
 </template>
 
 <style scoped>
-.mouseCircle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+.cursor {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100%;
+    box-shadow: 0 0 10px 5px white;
 }
+
 </style>
