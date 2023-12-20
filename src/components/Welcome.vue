@@ -1,32 +1,16 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
     <div class="main-container">
-        <span id="title-hover"><hr></span>
-        <h1>
-            <span id="title-hover">R</span>
-            <span id="title-hover">a</span>
-            <span id="title-hover">i</span>
-            <span id="title-hover">k</span>
-            <span id="title-hover">k</span>
-            <span id="title-hover">o</span>
-        </h1>
-        <h1>
-            <span id="title-hover">P</span>
-            <span id="title-hover">r</span>
-            <span id="title-hover">a</span>
-            <span id="title-hover">n</span>
-            <span id="title-hover">t</span>
-            <span id="title-hover">s</span>
-        </h1>
-        <span id="title-hover"><hr></span>
+      <h1><scope class="title">Hey</scope> 😎</h1>
+       <h3>Would Be Nice If You Scrolled 🔽</h3>
     </div>
 </template>
     
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 .main-container {
     font-family: 'Bungee', sans-serif;
     color: white;
@@ -37,19 +21,25 @@
     height: 100vh;
     width: 100vw;
 }
+
 .main-container h1 {
     font-size: 200px;
     letter-spacing: 20px;
-    transform: rotate(-30deg);
+    animation: fadeIn 2s;
 }
-.main-container hr {
-    width: 500px;
-    height: 10px;
-    background-color: white;
-    transform: rotate(-30deg);
+.main-container h3 {
+    animation: fadeIn 2s;
 }
-#title-hover:hover {
-    letter-spacing: 70px;
-    color: orangered;
+.title {
+    background: -webkit-linear-gradient(#ff9b05, #e5dd09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
 </style>

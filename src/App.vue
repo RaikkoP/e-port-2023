@@ -1,38 +1,28 @@
 <script setup lang="ts">
 import Welcome from './components/Welcome.vue'
-import { ref, onMounted, onUnmounted } from 'vue';
-let posX = ref(0);
-let posY = ref(0);
-
-const trackMouse = (e: MouseEvent) => {
-    posX.value = e.clientX - 10;
-    posY.value = e.clientY - 10;
-    console.log(posX.value, posY.value)
-}
-onMounted(() => {
-    window.addEventListener("mousemove", trackMouse);
-})
-onUnmounted(() => {
-    window.removeEventListener("mousemove", trackMouse);
-})
-
+import Introduction from './components/Introduction.vue'
+import AboutMe from './components/Aboutme.vue'
 </script>
 
 
 <template>
-    <div class="cursor" :style="{ left: posX + 'px', top: posY + 'px' }"></div>
-    <Welcome />
+    <div class="background">
+        <Welcome />
+        <Introduction />
+        <AboutMe />
+        <div>
+            <h1>Test</h1>
+        </div>
+    </div>
 </template>
 
 <style scoped>
-.cursor {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 100%;
-    box-shadow: 0 0 10px 5px white;
+.background {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(174, 27, 137, 0.73), rgba(117, 19, 93, 0.73));  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
 </style>
