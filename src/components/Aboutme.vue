@@ -3,7 +3,7 @@
 
 <template>
     <div class="main-container">
-        <h6>Raikko Prants</h6>
+        <h6>I'm A</h6>
         <h2>Software Developer</h2>
         <p>I'm a <span class="highlight">Junior Software Developer,</span> looking for an internship or my first job. I am from <span class="highlight">Estonia based in Tartu,</span> but
             capable
