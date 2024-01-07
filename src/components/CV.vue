@@ -21,6 +21,7 @@
                     <a href="https://github.com/RaikkoP" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100011192951093" target="_blank"><i
                             class="fa-brands fa-square-facebook"></i></a>
+                            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=raikko.prants@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div class="image-container">
@@ -148,91 +149,50 @@
             </div>
         </a>
     </div>
-
-    <div class="aboutme">
-        <div class="me">
-            <h1>
-                I'm Raikko a software developer from Tartu, where I dream to design the future.
-            </h1>
-            <p>
-                My primary areas of expertise lie
-                in <span class="hightlight">JavaScript, Java, and Python.</span> I am currently on the hunt for a <span
-                    class="highlight">junior developer role or an internship</span>
-                that allows me to utilize my skills and make a tangible impact on a dynamic team.
-
-                My ideal work environment is one that encourages in-person collaboration and operates within a structured,
-                nurturing framework. However, <span class="hightlight">I am flexible and adaptable, able to transition
-                    smoothly between in-office and
-                    remote work settings.</span>
-
-                One of my core strengths is my <span class="highlight">ability to work effectively in teams.</span> I
-                believe that collaboration breeds
-                innovation and that a team is only as strong as its members. <span class="highlight">My strong
-                    problem-solving abilities</span> complement
-                this skill, enabling me to tackle complex issues head-on and devise efficient solutions.
-
-                I am excited about the future and am <span class="highlight">ready to bring my dedication, enthusiasm, and
-                    technical prowess to a
-                    forward-thinking company</span>. Let's build something amazing together!
-            </p>
-            <i style="font-size: 28px; margin-top: 20px;" class="fa-solid fa-phone"></i>
-            <p>5694 7941</p>
-            <br>
-            <i style="font-size: 28px; margin-top: 5px;" class="fa-solid fa-envelope"></i>
-            <p>raikko.prants@gmail.com</p>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/raikko-prants-95637b286/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/RaikkoP" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100011192951093" target="_blank"><i
-                        class="fa-brands fa-square-facebook"></i></a>
+    <div class="education-work">
+        <div class="education">
+            <div class="section-title">
+                <i class="fa-solid fa-school"></i>
+                <p>Education</p>
+            </div>
+            <div class="list">
+                <div class="list-item">
+                    <h2>Iisaku Gümnaasium</h2>
+                    <h3>Primary Education</h3>
+                    <h4>2008 - 2017</h4>
+                </div>
+                <div class="list-item">
+                    <h2>Iisaku Gümnaasium</h2>
+                    <h3>Secondary Education</h3>
+                    <h4>2017 - 2021</h4>
+                </div>
+                <div class="list-item">
+                    <h2>VOCO</h2>
+                    <h3>Software Development</h3>
+                    <h4>2023 - ...</h4>
+                </div>
             </div>
         </div>
-        <div class="education-work">
-            <div class="education">
-                <div class="section-title">
-                    <i class="fa-solid fa-school"></i>
-                    <p>Education</p>
-                </div>
-                <div class="list">
-                    <div class="list-item">
-                        <h2>Iisaku Gümnaasium</h2>
-                        <h3>Primary Education</h3>
-                        <h4>2008 - 2017</h4>
-                    </div>
-                    <div class="list-item">
-                        <h2>Iisaku Gümnaasium</h2>
-                        <h3>Secondary Education</h3>
-                        <h4>2017 - 2021</h4>
-                    </div>
-                    <div class="list-item">
-                        <h2>VOCO</h2>
-                        <h3>Software Development</h3>
-                        <h4>2023 - ...</h4>
-                    </div>
-                </div>
+        <div class="work">
+            <div class="section-title">
+                <i class="fa-solid fa-briefcase"></i>
+                <p>Work</p>
             </div>
-            <div class="work">
-                <div class="section-title">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Work</p>
+            <div class="list">
+                <div class="list-item">
+                    <h2>Omniva</h2>
+                    <h3>Letter Carrier</h3>
+                    <h4>2020 - 2021</h4>
                 </div>
-                <div class="work-list">
-                    <div class="list-item">
-                        <h2>Omniva</h2>
-                        <h3>Letter Carrier</h3>
-                        <h4>2020 - 2021</h4>
-                    </div>
-                    <div class="list-item">
-                        <h2>Foxway OÜ</h2>
-                        <h3>Electronics Technician</h3>
-                        <h4>2021 - 2022</h4>
-                    </div>
-                    <div class="list-item">
-                        <h2>Puurmani Mansion School</h2>
-                        <h3>Website Technician</h3>
-                        <h4>2022 - 2023</h4>
-                    </div>
+                <div class="list-item">
+                    <h2>Foxway OÜ</h2>
+                    <h3>Electronics Technician</h3>
+                    <h4>2021 - 2022</h4>
+                </div>
+                <div class="list-item">
+                    <h2>Puurmani Mansion School</h2>
+                    <h3>Website Technician</h3>
+                    <h4>2022 - 2023</h4>
                 </div>
             </div>
         </div>
@@ -243,7 +203,6 @@
 </template>
 
 <style scoped>
-
 .intro {
     height: 70vh;
     display: flex;
@@ -389,34 +348,17 @@
     height: 20%;
 }
 
-.aboutme {
+.education-work {
     width: 80%;
-    color: rgb(76, 76, 76);
-    margin-top: 2em;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.me {
-    width: 60%;
-    padding: 20px;
-}
-
-.me h1 {
-    font-size: 50px;
-}
-
-.me p {
-    text-align: justify;
-    font-size: 28px;
-}
-
-.education-work {
-    width: 40%;
-}
-
 .education {
+    width: 40%;
     height: 400px;
     border: 3px solid rgb(231, 231, 231);
     border-radius: 20px;
@@ -445,6 +387,7 @@
 }
 
 .work {
+    width: 40%;
     height: 400px;
     border: 3px solid rgb(231, 231, 231);
     border-radius: 20px;
@@ -456,13 +399,16 @@
     .intro {
         height: 100%;
     }
+
     .info {
         flex-direction: column;
         width: 90%;
     }
+
     .info-text {
         width: 100%;
     }
+
     .image-container {
         margin-top: 50px;
         display: flex;
@@ -471,27 +417,95 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .image-container img{
+
+    .image-container img {
         rotate: 0deg;
     }
+
     .projects {
         height: 100%;
     }
+
     .aboutme {
         flex-direction: column;
     }
+
     .me {
         width: 90%;
         padding: 10px;
     }
+
     .education-work {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
+
     .education {
         height: 100%;
     }
+
+    .work {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .projects {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .intro {
+        height: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .info-text {
+        width: 100%;
+    }
+
+    .image-container {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-container img {
+        rotate: 0deg;
+    }
+
+    .projects {
+        height: 100%;
+    }
+
+    .aboutme {
+        flex-direction: column;
+    }
+
+    .me {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .education-work {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .education {
+        height: 100%;
+    }
+
     .work {
         height: 100%;
     }
